@@ -45,3 +45,4 @@ const dogSchema = new Schema({
 });
 
 Wireframes:
+Are in the wireframe directory/folder <---------
