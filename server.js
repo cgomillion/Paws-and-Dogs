@@ -6,6 +6,11 @@ const methodOverride = require('method-override');
 // CONTROLLER VARIABLES
 const dogsController = require('./controllers/pawsanddogs');
 
+// MIDDLEWARE
+app.use(express.urlencoded({extended:true}));
+app.use(methodOverride('_method'));
+app.use(express.static('public'));
+
 // MONGO/MONGOOSE CONFIG.
 const mongoose = require('mongoose');
 const mongoURI = 'mongodb://127.0.0.1:27017/dogs';
@@ -24,10 +29,7 @@ db.on('error', (err)=>{console.log('ERROR: ', err.message)})
 db.on('connected', (err)=>{console.log('mongo connected')})
 db.on('disconnected', (err)=>{console.log('mongo disconnected')})
 
-// MIDDLEWARE
-app.use(express.urlencoded({extended:true}));
-app.use(methodOverride('_method'));
-app.use(express.static('public'));
+
 
 // CONTROLLERS
 app.use('/pawsanddogs', dogsController);
