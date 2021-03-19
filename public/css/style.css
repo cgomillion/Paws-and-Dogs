@@ -1,8 +1,15 @@
 body {
-    background-color: teal;
+    background-image: url("https://www.crushpixel.com/big-static16/preview4/paw-print-background-cat-dog-2211195.jpg");
 }
 
 img {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
+    margin-left: 160px;;
+    
+}
+
+h2 {
+    color: lightblue;
+    align-items: center;
 }
