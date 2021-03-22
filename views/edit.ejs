@@ -1,0 +1,23 @@
+<%- include('./partials/header.ejs') %>
+
+<body>
+    <h1>Edit Fur Baby Form</h1>
+    <div class="new-form">
+        <form action="/pawsanddogs/<%=dog.id%>?_method=PUT" method="POST">
+       <h2> Name:  <input type="text" name="name" value="<%= dog.name %> " /> </h2><br/>
+
+       <h2>Breed: <input type="text" name="breed" value="<%= dog.breed %> "> </h2> <br/>
+
+        <h2>Description: <input type="text" name="description" value=" <%= dog.description %> "/> </h2><br/>
+
+        <h2>Image URL: <input type="text" name="img" value="<%= dog.img %> "> </h2><br/>
+        
+        <h2>Age: <input type="number" name="age" placeholder=" <%= dog.age %> "> </h2> <br/>
+
+        <input type="submit" value="Add the Changes"/>
+    </form>
+    <a href="/pawsanddogs">Back to the Party</a>
+    </div>
+</body>
+
+<%- include('./partials/footer.ejs') %>

@@ -83,4 +83,21 @@ router.post('/', (req, res) => {
     });
   })
 
+  // EDIT ROUTE
+router.get('/:id/edit', (req, res)=>{
+    Dog.findById(req.params.id, (err, foundDog) => { 
+        res.render('edit.ejs', {
+          dog: foundDog 
+        })
+    })
+  })
+
+ // UPDATE ROUTE
+router.put('/:id', (req, res)=>{
+    Dog.findByIdAndUpdate(req.params.id, req.body, (err, updatedModel) => {
+        res.redirect('/pawsanddogs')
+    })
+  })
+   
+
 module.exports = router;
