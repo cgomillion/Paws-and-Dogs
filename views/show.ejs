@@ -5,13 +5,13 @@
             <img src="<%= dog.img %> " alt="">
         </div>
     <div class="show-text">
-        <h1> <%= dog.name %> </h1>
+        <h1 class="show-name"> <%= dog.name %> </h1>
 
         <h2 class="show-breed"> <%= dog.breed %> </h2>
 
         <h3 class="show-desc"> <%= dog.description %> </h3>
         
-        <p>
+        <p class="show-age">
           Age:  <%= dog.age %> 
         </p>
         <!-- <p>
@@ -26,4 +26,7 @@
         </nav>
         </div>
     </body>
-</html>
+
+    
+
+<%- include('./partials/footer.ejs') %>

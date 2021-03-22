@@ -58,7 +58,6 @@ router.get('/seed', (req, res) => {
 
 // SHOW ROUTE
 router.get('/:id', (req, res)=>{
-    console.log(req.params.id)
     
     Dog.findById(req.params.id, (err, foundDog)=>{
         res.render('show.ejs', {
@@ -66,5 +65,22 @@ router.get('/:id', (req, res)=>{
         })
     })
   });
+
+  // CREATE ROUTE 
+router.post('/', (req, res) => {
+    console.log(req.body)
+  
+    Dog.create(req.body, (error, createdDog)=>{
+        if (error){
+          console.log(error);
+          res.send(error);
+        }
+        else{
+         console.log(createdDog);
+           res.redirect('/pawsanddogs')
+  
+        }
+    });
+  })
 
 module.exports = router;

@@ -1,0 +1,23 @@
+<%- include('./partials/header.ejs') %>
+
+<body>
+    <h1>New Fur Baby Form</h1>
+    <div class="new-form">
+    <form action="/pawsanddogs" method="POST">
+       <h2> Name:  <input type="text" name="name" placeholder="Name" /> </h2><br/>
+
+       <h2>Breed: <input type="text" name="breed" placeholder="breed"> </h2> <br/>
+
+        <h2>Description: <input type="text" name="description" placeholder="short description"/> </h2><br/>
+
+        <h2>Image URL: <input type="text" name="img"> </h2><br/>
+        
+        <h2>Age: <input type="number" name="age" placeholder="2"> </h2> <br/>
+
+        <input type="submit" value="Add Fur Baby to The Party"/>
+    </form>
+    <a href="/pawsanddogs">Back to the Party</a>
+    </div>
+</body>
+
+<%- include('./partials/footer.ejs') %>

@@ -11,19 +11,20 @@ body {
 }
 
 h1 {
-    color: whitesmoke;
+    color: darkslateblue;
     text-align: center;
     font-family: 'Ribeye Marrow', cursive;
     font-size: 40px;
 }
 
 h2 {
-    color: whitesmoke;
+    color: black;
     text-align: center;
     font-family: 'Ranchers', cursive;
     margin: 0 auto;
   display: block;
   width: 500px;
+  text-shadow: black;
 }
 
 h3 {
@@ -80,10 +81,32 @@ p {
     background-color: darkslategray;
     display: block;
     width: 550px;
-    height: 350px;
+    height: 325px;
     margin: 0 auto;
 }
 
 nav {
     text-align: center;
+}
+
+.show-name {
+    color: whitesmoke;
+}
+
+.show-breed {
+    color: orange;
+}
+
+.show-age {
+    color: lightgreen;
+}
+
+.new-form {
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    align-items: center;
 }
