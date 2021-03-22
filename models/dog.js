@@ -7,7 +7,7 @@ const dogSchema = new Schema({
     description: { type: String, required: true },
     img: String,
     age: { type: Number, min: 0 },
-    loveMeter: { type: Number, min: 0, max: 10 }
+    loveable: { type: Number, min: 0, max: 10 }
 });
 
 const Dog = model('Dog', dogSchema);
