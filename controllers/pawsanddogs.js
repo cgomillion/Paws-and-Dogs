@@ -98,6 +98,18 @@ router.put('/:id', (req, res)=>{
         res.redirect('/pawsanddogs')
     })
   })
+
+  // DELETE ROUTE
+router.delete('/:id', (req, res) => {
+    Dog.findByIdAndRemove(req.params.id, (err, data)=>{
+        if (err) {
+            console.log(err)
+        } else {
+            console.log(data)
+            res.redirect('/pawsanddogs') 
+        }
+    })
+  })
    
 
 module.exports = router;

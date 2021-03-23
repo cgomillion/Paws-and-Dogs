@@ -11,9 +11,9 @@ body {
 }
 
 h1 {
-    color: darkslateblue;
+    color: black;
     text-align: center;
-    font-family: 'Ribeye Marrow', cursive;
+    font-family: 'Luckiest Guy', cursive;
     font-size: 40px;
 }
 
@@ -79,9 +79,11 @@ p {
 
 .show-text {
     background-color: darkslategray;
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 550px;
-    height: 325px;
+    height: 405px;
     margin: 0 auto;
 }
 
@@ -109,4 +111,14 @@ nav {
 
 input {
     align-items: center;
+}
+
+.index-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-intro {
+    color: aquamarine;
 }
