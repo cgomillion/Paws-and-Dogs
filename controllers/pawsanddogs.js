@@ -10,14 +10,17 @@ const Dog = require('../models/dog');
 router.get('/', (req, res)=>{
     Dog.find({}, (error, allDogs)=>{
         res.render('index.ejs', {
-            dog: allDogs
+            dog: allDogs,
+            currentUser: req.session.currentUser
         });
     });
 });
 
 // NEW ROUTE
 router.get('/new', (req, res)=>{
-  res.render('new.ejs');
+  res.render('new.ejs', {
+    currentUser: req.session.currentUser
+  });
 });
 
 // SEED ROUTE
@@ -61,7 +64,8 @@ router.get('/:id', (req, res)=>{
     
     Dog.findById(req.params.id, (err, foundDog)=>{
         res.render('show.ejs', {
-            dog: foundDog
+            dog: foundDog,
+            currentUser: req.session.currentUser
         })
     })
   });
@@ -87,7 +91,8 @@ router.post('/', (req, res) => {
 router.get('/:id/edit', (req, res)=>{
     Dog.findById(req.params.id, (err, foundDog) => { 
         res.render('edit.ejs', {
-          dog: foundDog 
+          dog: foundDog,
+          currentUser: req.session.currentUser 
         })
     })
   })

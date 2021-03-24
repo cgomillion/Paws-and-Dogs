@@ -1,0 +1,24 @@
+<nav class="navi">
+    <div>
+        
+     
+                    
+        <ul class="right lightblue">          
+            
+            <% if (currentUser) { %>
+                <li style="padding-right:15px;">Welcome <%= currentUser.username %></li>
+                
+                <li>
+                    <form action="/sessions?_method=DELETE" method="POST">
+                        <button>Log out</button>
+                    </form>
+                </li>
+            <% } else { %>
+                <li><a href="/sessions/new">Log In</a></li>
+                <li><a href="/users/new">Sign Up</a></li>
+            <% } %>          
+                    
+        </ul>
+    </div>
+    
+</nav>

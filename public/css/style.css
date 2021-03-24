@@ -15,6 +15,7 @@ h1 {
     text-align: center;
     font-family: 'Luckiest Guy', cursive;
     font-size: 40px;
+    
 }
 
 h2 {
@@ -110,7 +111,9 @@ nav {
 }
 
 input {
-    align-items: center;
+    margin: auto;
+    display: block;
+    background-color: aquamarine;
 }
 
 .index-links {
@@ -121,4 +124,22 @@ input {
 
 .home-intro {
     color: aquamarine;
+}
+
+button {
+    background-color: orange;
+    font-family: 'Ranchers', cursive;
+}
+
+.right {
+    background-color: lightgreen;
+}
+
+nav {
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+    font-family: 'Ribeye Marrow', cursive;
 }
