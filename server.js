@@ -52,7 +52,7 @@ app.use('/users', usersControllers);
 app.use('/sessions', sessionsControllers);
 
 // HOMEPAGE ROUTE
-app.get('https://paws-and-dogs.herokuapp.com/', (req, res) => {
+app.get('/', (req, res) => {
     res.render('home.ejs', {
 		currentUser: req.session.currentUser
 	})
