@@ -1,6 +1,9 @@
 {
   "name": "paws-and-dogs",
   "version": "1.0.0",
+  "engines": {
+    "node": "15.8.0"
+  },
   "description": "First full-stack application",
   "main": "server.js",
   "scripts": {

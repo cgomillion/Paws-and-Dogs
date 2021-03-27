@@ -8,13 +8,14 @@ General App Idea/Purpose: An ap that will allow me to catalogue all of my dogs a
 Who would like to use it: Dog Lovers, Curious Potential Dog Owners
 
 7 Restful Routes:
-Index   -> GET       -> /dogs          -> List of all the dogs on database
-Show    -> GET       -> /dogs/:id      -> Info about 1 dog, (dog clicked on)
-New     -> GET       -> /dogs/new      -> Shows form to enter new dog info
-Create  -> POST      -> /dogs          -> Creates dog on server
-Edit    -> GET       -> /dogs/:id/edit -> Get prefilled form for user to change
-Update  -> PUT/PATCH -> /dogs/:id      -> Updates the data from 'edit' on server
-Destroy -> DELETE    -> /dogs/:id      -> Removes Dog (id) from the server
+-----------------
+Index | GET | /dogs | List of all the dogs on database
+Show | GET | /dogs/:id | Info about 1 dog, (dog clicked on)
+New | GET | /dogs/new | Shows form to enter new dog info
+Create | POST | /dogs | Creates dog on server
+Edit | GET | /dogs/:id/edit | Get prefilled form for user to change
+Update | PUT/PATCH | /dogs/:id | Updates the data from 'edit' on server
+Destroy | DELETE | /dogs/:id | Removes Dog (id) from the server
 
 -- Home Page -> '/' -> Will show an intro page with the wonderful Huncho. (if applicable)
 
