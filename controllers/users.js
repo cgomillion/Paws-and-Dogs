@@ -25,7 +25,9 @@ router.post('/', (req, res) => {
         else {
             res.send(createdUser)
             console.log(createdUser)
+            res.redirect('/')
         }
+        
     })
 })
 
