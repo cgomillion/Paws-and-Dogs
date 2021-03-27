@@ -47,6 +47,6 @@ const dogSchema = new Schema({
 Wireframes:
 Are in the wireframe directory/folder <---------
 
-
-GIT HUB: https://cgomillion.github.io/Paws-and-Dogs/
+GIT HUB REPO : https://github.com/cgomillion/Paws-and-Dogs
+GIT HUB Deployment: https://cgomillion.github.io/Paws-and-Dogs/
 HEROKU : https://paws-and-dogs.herokuapp.com/
