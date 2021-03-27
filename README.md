@@ -7,8 +7,8 @@ General App Idea/Purpose: An ap that will allow me to catalogue all of my dogs a
 
 Who would like to use it: Dog Lovers, Curious Potential Dog Owners
 
-7 Restful Routes:
------------------
+7 Restful Routes | HTTP | URL | DESC.
+---------------- | ---- | ---- | ----- 
 Index | GET | /dogs | List of all the dogs on database
 Show | GET | /dogs/:id | Info about 1 dog, (dog clicked on)
 New | GET | /dogs/new | Shows form to enter new dog info
