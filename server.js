@@ -45,7 +45,6 @@ db.on('connected', (err)=>{console.log('mongo connected')})
 db.on('disconnected', (err)=>{console.log('mongo disconnected')})
 
 
-
 // CONTROLLERS
 app.use('/pawsanddogs', dogsController);
 app.use('/users', usersControllers);
